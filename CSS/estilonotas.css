@@ -1,0 +1,133 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background: radial-gradient(circle at top, #0f172a, #020617);
+font-family:'Press Start 2P', cursive;
+color:white;
+text-align:center;
+}
+
+/* MENU */
+.menu{
+width:90%;
+max-width:1000px;
+display:flex;
+justify-content:space-around;
+margin:30px auto;
+background:rgba(0,0,0,0.8);
+border-radius:20px;
+border:2px solid #00f0ff;
+padding:15px;
+box-shadow:0 0 15px #00f0ff;
+}
+
+.menu a{
+color:white;
+font-size:15px;
+text-decoration:none;
+padding:10px;
+transition:0.3s;
+}
+
+.menu a:hover{
+background:#00f0ff;
+color:black;
+border-radius:10px;
+}/* TITULO */
+.titulo{
+margin:20px;
+text-shadow:0 0 10px #8b5cf6;
+}
+
+/* BUSCADOR */
+.nube{
+background:rgba(255,255,255,0.05);
+padding:15px;
+width:300px;
+margin:auto;
+border-radius:15px;
+box-shadow:0 0 10px #00f0ff;
+}
+
+.nube input{
+width:100%;
+padding:10px;
+background:transparent;
+border:none;
+color:white;
+}
+
+/* PANEL */
+.panel{
+background:rgba(15,23,42,0.8);
+padding:20px;
+width:320px;
+margin:auto;
+border-radius:15px;
+box-shadow:0 0 15px #8b5cf6;
+}
+
+input, textarea, select{
+width:100%;
+margin:10px 0;
+padding:10px;
+background:#020617;
+color:white;
+border:1px solid #334155;
+}
+
+/* BOTON */
+.btn{
+background:linear-gradient(45deg,#8b5cf6,#ff00ff);
+padding:10px;
+border:none;
+cursor:pointer;
+color:white;
+box-shadow:0 0 10px #8b5cf6;
+}
+
+/* GRID */
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* NOTAS */
+.nota{
+background:#111827;
+border:2px solid #00f0ff;
+margin:10px;
+padding:15px;
+width:230px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.nota:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #00f0ff;
+}
+
+.importante{
+border:2px solid gold;
+box-shadow:0 0 15px gold;
+}
+
+/* BOTONES NOTA */
+.nota button{
+margin-top:5px;
+padding:5px;
+cursor:pointer;
+background:#020617;
+color:white;
+border:none;
+}
+
+.footer{
+margin-top:40px;
+}

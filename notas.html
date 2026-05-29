@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Notas</title>
+
+<link rel="stylesheet" href="CSS/estilonotas.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="Tareas.html">Tareas</a>
+<a href="notas.html">Notas</a>
+<a href="cronometro.html">Cronómetro</a>
+<a href="ayuda.html">Ayuda</a>
+</nav>
+
+<h1 class="titulo">📓 SISTEMA DE NOTAS</h1>
+
+<!-- BUSCADOR -->
+<div class="nube">
+<input id="buscador" placeholder="🔍 Buscar nota...">
+</div>
+
+<!-- FORM -->
+<div class="panel">
+
+<input id="titulo" placeholder="Título">
+<textarea id="contenido" placeholder="Contenido"></textarea>
+
+<select id="dificultad">
+<option value="Fácil">Fácil</option>
+<option value="Media">Media</option>
+<option value="Difícil">Difícil</option>
+</select>
+
+<input type="date" id="fecha">
+
+<label>
+<input type="checkbox" id="importante"> ⭐ Importante
+</label>
+
+<button id="crear" class="btn">💾 Guardar</button>
+
+</div>
+
+<h2 class="titulo">📚 NOTAS</h2>
+
+<div id="listaNotas" class="grid"></div>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Todos los derechos reservados | Desarrollado por Diego García Simental</p>
+</footer>
+
+<!-- AUDIOS -->
+<audio id="sonidoGuardar" src="AUDIO/save.mp3"></audio>
+<audio id="sonidoEliminar" src="AUDIO/delete.mp3"></audio>
+<audio id="sonidoClick" src="AUDIO/click.mp3"></audio>
+
+<script src="JS/validarnotas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Registro</title>
+
+<link rel="stylesheet" href="CSS/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1 class="titulop">SteelMind</h1>
+
+<form action="iniciosesion.html" class="formulario" onsubmit="return validaf()">
+
+<h2 class="titulo">Crea una cuenta</h2>
+
+<div class="contenedor">
+
+<input type="text" id="nombre" class="input-48" placeholder="Ingresa el nombre">
+<input type="text" id="apellido" class="input-48" placeholder="Apellidos">
+
+<input type="text" id="correo" class="input-100" placeholder="Correo Valido">
+
+<input type="text" id="usuario" class="input-48" placeholder="Usuario">
+<input type="password" id="clave" class="input-48" placeholder="Contraseña">
+
+<input type="text" id="telefono" class="input-100" placeholder="No. Telefono">
+
+<br><br>
+
+<input type="radio" name="genero" id="sexh">
+<label class="check">Hombre</label>
+
+<input type="radio" name="genero" id="sexm">
+<label class="check">Mujer</label>
+
+<br><br>
+
+<input type="checkbox" id="tercon">
+<label class="acept">Aceptar terminos y condiciones</label>
+
+<a href="pagina.html" class="linkp">terminos</a>
+
+<br><br>
+
+<input type="submit" value="Registrar" class="botonreg">
+
+<p class="form-link">
+¿Ya tienes una cuenta?
+<a href="iniciosesion.html" class="linkp">Ingresa aqui</a>
+</p>
+
+<input type="button" value="Limpiar" onclick="limpiar();" class="botonreg">
+
+</div>
+
+</form>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Todos los derechos reservados | Desarrollado por Diego García Simental</p>
+</footer>
+
+<script src="JS/validaf.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Misión 1</title>
+
+<link rel="stylesheet" href="CSS/estilomision1.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="Tareas.html">Tareas</a>
+<a href="notas.html">Notas</a>
+<a href="cronometro.html">Cronometro</a>
+<a href="ayuda.html">Ayuda</a>
+<a href="primera.html">Perfil</a>
+</nav>
+
+<div class="mision">
+
+<h1 class="titulo-mision">⚔️ MISIÓN: Tratamientos térmicos</h1>
+
+<p class="objetivo">
+Lee el resumen y escribe el tuyo.
+</p>
+
+<!-- RESUMEN -->
+<div class="resumen-profesor">
+<h2>📜 Resumen base</h2>
+
+<p>
+Los tratamientos térmicos son procesos industriales aplicados a los metales, especialmente al acero, con el objetivo de modificar sus propiedades mecánicas como la dureza, la resistencia, la ductilidad y la tenacidad. Estos procesos se basan en tres etapas fundamentales: calentamiento, mantenimiento a una temperatura específica y enfriamiento controlado.</p>
+
+<p>	<br>	
+Entre los principales tipos de tratamientos térmicos se encuentran el recocido, el normalizado, el temple y el revenido. El recocido consiste en calentar el material a temperaturas elevadas (generalmente entre 500°C y 900°C dependiendo del tipo de acero) y enfriarlo lentamente, lo que reduce la dureza y mejora la ductilidad, facilitando su mecanizado. El normalizado implica calentar el acero a temperaturas similares pero enfriarlo al aire, logrando una estructura más uniforme y mejorando sus propiedades mecánicas.
+</p>
+<p>	<br>
+El temple se realiza calentando el acero a temperaturas altas (aproximadamente entre 800°C y 950°C en aceros al carbono) y enfriándolo rápidamente en medios como agua, aceite o soluciones poliméricas. Este proceso aumenta considerablemente la dureza del material, aunque puede volverlo más frágil. Por esta razón, se complementa con el revenido, que consiste en recalentar el material templado a temperaturas menores (entre 150°C y 600°C), reduciendo la fragilidad y mejorando la tenacidad sin perder demasiada dureza.</p>
+<br>
+<p>	
+
+Los hornos utilizados en estos procesos pueden ser de distintos tipos, como hornos eléctricos de resistencia, hornos de gas y hornos de atmósfera controlada. Los hornos eléctricos permiten un control preciso de la temperatura, mientras que los de atmósfera controlada evitan la oxidación del material al regular gases como nitrógeno o argón. También existen hornos de inducción, que calientan el metal mediante campos electromagnéticos, siendo muy rápidos y eficientes.</p>
+<br>
+<p>	
+La principal diferencia entre los tratamientos radica en la velocidad de enfriamiento y la temperatura alcanzada, lo cual determina la microestructura final del acero. Por ejemplo, un enfriamiento lento produce estructuras más blandas y dúctiles, mientras que un enfriamiento rápido genera estructuras más duras pero menos flexibles. En conjunto, estos procesos permiten adaptar el acero a diferentes aplicaciones industriales, como la fabricación de herramientas, piezas mecánicas, estructuras y componentes sometidos a altas exigencias.
+</p>
+
+</div>
+
+<!-- USUARIO -->
+<div class="resumen-usuario">
+<h2>✏️ Tu resumen</h2>
+
+<textarea id="resumenUsuario" placeholder="Escribe aquí..."></textarea>
+</div>
+
+<div class="botones">
+<button id="borrar" class="borrar">Borrar</button>
+<button id="completar" class="completar">Completar misión</button>
+</div>
+
+<p id="mensaje"></p>
+
+</div>
+
+<a href="Tareas.html" class="botonvolver">Volver</a>
+
+<footer class="footer">
+<p>© 2026 SteelMind</p>
+</footer>
+
+<!-- 🔊 AUDIOS -->
+<audio id="audioXP" src="AUDIO/audioxp.mp3"></audio>
+<audio id="audioEvolucion" src="AUDIO/evolucionclase.mp3"></audio>
+
+<script src="JS/personaje.js"></script>
+<script src="JS/mision1.js"></script>
+
+<!-- 🌟 PANTALLA EVOLUCIÓN -->
+<div id="pantallaEvolucion" class="evolucion">
+
+    <div class="contenidoEvo">
+
+        <h1>✨ HAS EVOLUCIONADO ✨</h1>
+
+        <p id="textoEvolucion"></p>
+
+        <button id="continuarEvo">Continuar</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

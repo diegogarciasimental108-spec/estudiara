@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SteelMind - Misión 6</title>
+
+<link rel="stylesheet" href="CSS/estilomision6.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="menu">
+  <a href="Tareas.html">Tareas</a>
+  <a href="notas.html">Notas</a>
+  <a href="cronometro.html">Cronometro</a>
+  <a href="ayuda.html">Ayuda</a>
+  <a href="primera.html">Perfil</a>
+</nav>
+
+<h1 class="titulo">🎥 Misión 6: Aprende con videos</h1>
+<h2 class="titulo">🎥 Tratamientos térmicos del acero</h2>
+
+<div class="video-box">
+
+  <h2 id="tituloVideo"></h2>
+
+  <p>
+    <a id="linkVideo" href="" target="_blank">Ver video en YouTube</a>
+  </p>
+
+  <button id="anterior">⏪ Video anterior</button>
+  <button id="visto">✔ He visto el video</button>
+
+  <p id="progreso"></p>
+  <p id="xp"></p>
+
+</div>
+
+<a href="Tareas.html" class="botonvolver">Volver</a>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Todos los derechos reservados | Desarrollado por Diego García Simental</p>
+</footer>
+
+<!-- AUDIOS -->
+<audio id="audioXP" src="AUDIO/xp.mp3"></audio>
+<audio id="audioEvolucion" src="AUDIO/evolucionclase.mp3"></audio>
+
+<!-- EVOLUCIÓN -->
+<div id="pantallaEvolucion" class="evolucion">
+  <div class="contenidoEvo">
+    <h1>✨ HAS EVOLUCIONADO ✨</h1>
+    <p id="textoEvolucion"></p>
+    <button id="continuarEvo">Continuar</button>
+  </div>
+</div>
+
+<!-- 🔥 IMPORTANTE ORDEN -->
+<script src="JS/personaje.js"></script>
+<script src="JS/mision6.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Misión 5</title>
+
+<link rel="stylesheet" href="CSS/estilomision5.css">
+
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="Tareas.html">Tareas</a>
+<a href="notas.html">Notas</a>
+<a href="cronometro.html">Cronometro</a>
+<a href="ayuda.html">Ayuda</a>
+<a href="primera.html">Perfil</a>
+</nav>
+
+<!-- HUD DEL JUGADOR -->
+<div class="hud">
+
+<div id="vidas"></div>
+
+<div class="xpcontenedor">
+<div id="barraXP"></div>
+</div>
+
+<p id="nivel"></p>
+<p id="clase"></p>
+
+</div>
+
+<h1 class="titulo">🎮 Misión 5: Aprende y responde</h1>
+
+<div class="quiz">
+
+<div id="progreso"></div>
+
+<!-- RESUMEN -->
+<div id="act5">
+
+<h2>📚 Resumen: Revenido</h2>
+
+<p>
+El <strong>revenido</strong> es un tratamiento térmico que se aplica al acero
+después del <span class="clave">temple</span>.
+</p>
+
+<p>
+Reduce la <span class="clave">fragilidad</span> y mejora la
+<span class="clave">tenacidad</span>.
+</p>
+
+<p>
+Se realiza entre <span class="clave">150°C y 650°C</span>.
+</p>
+
+<p><strong>Tipos:</strong></p>
+
+<p><strong>Bajo:</strong> mantiene dureza</p>
+<p><strong>Medio:</strong> equilibrio</p>
+<p><strong>Alto:</strong> resistencia al impacto</p>
+
+<button id="empezar">Comenzar Quiz</button>
+
+</div>
+
+<h2 id="act2"></h2>
+
+<div id="act3"></div>
+
+<p id="mensaje"></p>
+<p id="xp"></p>
+
+</div>
+
+<a href="Tareas.html" class="botonvolver">Volver</a>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Desarrollado por Diego García</p>
+</footer>
+<!-- 🔊 AUDIOS -->
+<audio id="audioXP" src="AUDIO/xp.mp3"></audio>
+<audio id="audioEvolucion" src="AUDIO/evolucionclase.mp3"></audio>
+
+<!-- 🌟 EVOLUCIÓN -->
+<div id="pantallaEvolucion" class="evolucion">
+  <div class="contenidoEvo">
+    <h1>✨ HAS EVOLUCIONADO ✨</h1>
+    <p id="textoEvolucion"></p>
+    <button id="continuarEvo">Continuar</button>
+  </div>
+</div>
+
+
+
+<script src="JS/personaje.js"></script>
+<script src="JS/mision5.js"></script>
+
+</body>
+</html>

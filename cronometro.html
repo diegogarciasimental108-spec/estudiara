@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Pomodoro</title>
+
+<link rel="stylesheet" href="CSS/estilocronometro.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="Tareas.html">Tareas</a>
+<a href="notas.html">Notas</a>
+<a href="cronometro.html">Cronómetro</a>
+<a href="ayuda.html">Ayuda</a>
+</nav>
+
+<h1 class="titulo">⏱ MODO ENFOQUE</h1>
+
+<div class="contenedor">
+
+<label>⚡ Tiempo de estudio</label>
+<input type="number" id="tiempoEstudio" value="45">
+
+<label>💤 Tiempo de descanso</label>
+<input type="number" id="tiempoDescanso" value="5">
+
+<div class="reloj" id="reloj">00:00</div>
+
+<div class="botones">
+<button id="iniciar">▶ Iniciar</button>
+<button id="pausar">⏸ Pausar</button>
+<button id="continuar">⏯ Continuar</button>
+<button id="terminar">⛔ Terminar</button>
+</div>
+
+<p id="estado"></p>
+
+</div>
+
+<a href="index.html" class="botonvolver">Cerrar Sesión</a>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Diego García</p>
+</footer>
+
+<!-- 🔊 AUDIOS (TU CAMBIAS LOS NOMBRES) -->
+<audio id="audioIniciar" src="AUDIO/audioiniciarcr.mp3"></audio>
+<audio id="audioPausar" src="AUDIO/audiopausacr.mp3"></audio>
+<audio id="audioContinuar" src="AUDIO/audiocontinuarcr.mp3"></audio>
+<audio id="audioTerminar" src="AUDIO/audioterminarcr.mp3"></audio>
+
+<script src="JS/valcronometro.js"></script>
+
+</body>
+</html>

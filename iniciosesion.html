@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Inicio de Sesión</title>
+
+<link rel="stylesheet" href="CSS/estilo.css">
+
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1 class="titulop">SteelMind</h1>
+
+<form action="inicio.html" class="formulario" onsubmit="return validarsesion()">
+
+<h2 class="titulo">Iniciar Sesión</h2>
+
+<div class="contenedor">
+
+<input type="text" id="usuario" class="input-100" placeholder="Usuario">
+
+<input type="password" id="clave" class="input-100" placeholder="Contraseña">
+
+<input type="submit" value="Iniciar Sesión" class="botonreg">
+
+<input type="checkbox" id="tercon">
+<label class="acept">Aceptar terminos y condiciones</label>
+
+<a href="pagina.html" class="linkp">terminos</a>
+
+<input type="button" value="Limpiar" onclick="limpiar();" class="botonreg">
+
+<a href="index.html" class="botonreg botonvolver">Regresar</a>
+
+</div>
+
+</form>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Todos los derechos reservados | Desarrollado por Diego García Simental</p>
+</footer>
+
+<script src="JS/validarsesion.js"></script>
+
+</body>
+</html>

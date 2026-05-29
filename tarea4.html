@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SteelMind - Misión 4</title>
+
+<link rel="stylesheet" href="CSS/estilomision4.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="Tareas.html">Tareas</a>
+<a href="notas.html">Notas</a>
+<a href="cronometro.html">Cronometro</a>
+<a href="ayuda.html">Ayuda</a>
+<a href="primera.html">Perfil</a>
+</nav>
+
+<h1 class="titulo">🎮 Misión 4: Verdadero o Falso</h1>
+
+<div id="panelJugador">
+
+<p id="vidaCorazones"></p>
+
+<p>Nivel: <span id="nivel"></span> | Clase: <span id="clase"></span></p>
+
+<p>XP: <span id="xpTexto"></span></p>
+
+<div id="barraXP">
+<div id="xpBarra"></div>
+</div>
+
+</div>
+
+<div class="quiz">
+
+<div id="progreso"></div>
+
+<h2 id="pregunta"></h2>
+
+<div class="botones">
+<button id="verdadero">✔ VERDADERO</button>
+<button id="falso">✖ FALSO</button>
+</div>
+
+<p id="mensaje"></p>
+<p id="xp"></p>
+
+</div>
+
+<a href="Tareas.html" class="botonvolver">Volver</a>
+
+<!-- 🔊 AUDIOS -->
+<audio id="audioXP" src="AUDIO/xp.mp3"></audio>
+<audio id="audioEvolucion" src="AUDIO/evolucionclase.mp3"></audio>
+
+<!-- 🌟 EVOLUCIÓN -->
+<div id="pantallaEvolucion" class="evolucion">
+  <div class="contenidoEvo">
+    <h1>✨ HAS EVOLUCIONADO ✨</h1>
+    <p id="textoEvolucion"></p>
+    <button id="continuarEvo">Continuar</button>
+  </div>
+</div>
+
+<footer class="footer">
+<p>© 2026 SteelMind | Todos los derechos reservados | Desarrollado por Diego García Simental</p>
+</footer>
+
+<script src="JS/personaje.js"></script>
+<script src="JS/mision4.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+body{
+background:#2D134D;
+font-family:sans-serif;
+min-height:100vh;
+}
+
+/* MENU */
+
+.menu{
+width:90%;
+max-width:1000px;
+
+display:flex;
+justify-content:space-around;
+align-items:center;
+
+margin:30px auto;
+
+background:rgba(0,0,0,0.7);
+
+border-radius:25px;
+border:2px solid #8B5CF6;
+
+padding:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.menu a{
+text-decoration:none;
+
+padding:15px 30px;
+
+color:white;
+
+font-size:28px;
+
+font-family:'VT323', monospace;
+
+border-radius:12px;
+
+transition:all 0.3s ease;
+}
+
+.menu a:hover{
+background:#8B5CF6;
+
+box-shadow:0 0 15px #8B5CF6;
+
+transform:translateY(-4px) scale(1.1);
+}
+@media (max-width:600px){
+
+.menu{
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.menu a{
+    width:45%;
+    font-size:22px;
+}
+
+}
+
+
+/* TITULO */
+
+.titulo{
+font-family:'VT323', monospace;
+font-size:60px;
+color:white;
+text-align:center;
+margin-top:40px;
+margin-bottom:30px;
+}
+
+/* CONTENEDOR */
+
+.lista-tareas{
+width:90%;
+max-width:800px;
+margin:auto;
+}
+
+/* TARJETAS */
+
+.tarea{
+display:flex;
+background:white;
+margin:18px 0;
+border-radius:12px;
+overflow:hidden;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+transition:0.3s;
+}
+
+.tarea:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* BARRA LATERAL */
+
+.lado{
+width:60px;
+background:#9AD9C9;
+}
+
+/* CONTENIDO */
+
+.contenido{
+padding:18px;
+flex:1;
+}
+
+.contenido a{
+text-decoration:none;
+color:black;
+}
+
+.contenido h3{
+font-size:22px;
+margin-bottom:5px;
+}
+
+.contenido p{
+font-size:14px;
+color:#555;
+}
+
+/* IMPORTANCIA */
+
+.importancia{
+margin-top:6px;
+font-weight:bold;
+color:#f59e0b;
+}
+
+/* CHECKBOX */
+
+label{
+display:block;
+margin-top:10px;
+font-size:14px;
+}
+
+input[type="checkbox"]{
+margin-right:5px;
+accent-color:#8B5CF6;
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    font-size:14px;
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+}
+
+.botonvolver{
+display:block;
+width:200px;
+margin:30px auto;
+padding:12px;
+text-align:center;
+background:#F08DED;
+color: black;
+font-family:'VT323', monospace;
+font-size:22px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+
+}
+
+.botonvolver:hover{
+background:#EDB4EB;
+transform:scale(1.05);
+box-shadow:0 0 10px #FAD7F8;
+
+}

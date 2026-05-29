@@ -1,0 +1,290 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f172a;
+font-family:sans-serif;
+min-height:100vh;
+color:white;
+}
+
+.menu{
+width:90%;
+max-width:1000px;
+display:flex;
+justify-content:space-around;
+margin:30px auto;
+background:rgba(0,0,0,0.6);
+border-radius:20px;
+border:2px solid #8B5CF6;
+padding:10px;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-size:26px;
+font-family:'VT323', monospace;
+padding:10px 20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.menu a:hover{
+background:#8B5CF6;
+transform:scale(1.1);
+}
+@media (max-width:600px){
+
+.menu{
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.menu a{
+    width:45%;
+    font-size:22px;
+}
+
+}
+
+
+#panelJugador{
+text-align:center;
+margin:20px;
+font-size:20px;
+}
+
+/* CORAZONES */
+
+#vidaCorazones{
+font-size:30px;
+margin-bottom:10px;
+}
+
+/* BARRA XP */
+
+#barraXP{
+width:300px;
+height:20px;
+background:#333;
+margin:10px auto;
+border-radius:10px;
+overflow:hidden;
+}
+
+#xpBarra{
+height:100%;
+width:0%;
+background:#4caf50;
+transition:width 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo{
+font-family:'VT323', monospace;
+font-size:60px;
+text-align:center;
+margin-top:40px;
+}
+
+.quiz{
+width:90%;
+max-width:700px;
+margin:40px auto;
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+#progreso{
+font-size:18px;
+margin-bottom:15px;
+color:#cbd5e1;
+}
+
+#pregunta{
+font-size:28px;
+margin-bottom:30px;
+}
+
+.botones{
+display:flex;
+gap:20px;
+justify-content:center;
+}
+
+button{
+flex:1;
+padding:25px;
+font-size:28px;
+font-family:'VT323', monospace;
+border:none;
+border-radius:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+#verdadero{
+background:#2563eb;
+color:white;
+}
+
+#verdadero:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #2563eb;
+}
+
+#falso{
+background:#dc2626;
+color:white;
+}
+
+#falso:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #dc2626;
+}
+
+.correcto{
+background:#22c55e !important;
+}
+
+.incorrecto{
+background:#ef4444 !important;
+}
+
+#mensaje{
+margin-top:20px;
+font-size:22px;
+}
+
+#xp{
+margin-top:10px;
+font-size:20px;
+color:#facc15;
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    font-size:14px;
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+}
+
+.botonvolver{
+display:block;
+width:200px;
+margin:30px auto;
+padding:12px;
+text-align:center;
+background:#F08DED;
+color: black;
+font-family:'VT323', monospace;
+font-size:22px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+
+}
+
+.botonvolver:hover{
+background:#EDB4EB;
+transform:scale(1.05);
+box-shadow:0 0 10px #FAD7F8;
+
+}
+.evolucion{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: radial-gradient(circle, #ffffff, #00f0ff, #000);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+animation: flash 1s infinite alternate;
+}
+
+@keyframes flash{
+0%{opacity:0.7;}
+100%{opacity:1;}
+}
+
+.contenidoEvo{
+background:black;
+padding:40px;
+border:5px solid cyan;
+border-radius:20px;
+text-align:center;
+color:white;
+font-family: 'VT323', monospace;
+box-shadow: 0 0 30px cyan;
+animation: zoom 0.5s ease;
+}
+
+@keyframes zoom{
+from{transform:scale(0.5);}
+to{transform:scale(1);}
+}
+
+.evolucion{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: radial-gradient(circle, white, cyan, black);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.contenidoEvo{
+background:black;
+padding:40px;
+border:4px solid cyan;
+border-radius:20px;
+text-align:center;
+color:white;
+font-family: 'VT323', monospace;
+}
+
+.contenidoEvo h1{
+font-size:50px;
+color:yellow;
+}
+
+.contenidoEvo p{
+font-size:30px;
+}
+
+.contenidoEvo button{
+font-size:25px;
+padding:10px 30px;
+background:cyan;
+border:none;
+cursor:pointer;
+}
